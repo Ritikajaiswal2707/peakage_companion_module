@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}{{ companion.name }} · Admin{% endblock %}
+{% block content %}
+<a class="back" href="/admin">← All companions</a>
+<section class="card">
+  <h1>{{ companion.name }}</h1>
+  <p class="muted">{{ companion.phone }}{% if companion.city %} · {{ companion.city }}{% endif %} · registered {{ companion.created_at.strftime('%d %b %Y') }}</p>
+</section>
+
+<section class="card">
+  <h2>Modules</h2>
+  <table class="grid">
+    <thead><tr><th>Module</th><th>Status</th><th>Lessons</th><th>Best</th><th>Attempts</th><th></th></tr></thead>
+    <tbody>
+      {% for s in statuses %}
+      <tr>
+        <td><strong>{{ s.module.code }}</strong> {{ s.module.title }}</td>
+        <td><span class="badge badge-{{ {'passed':'pass','blocked':'blocked','locked':'locked','open':'open'}[s.state] }}">{{ s.state }}</span></td>
+        <td>{{ s.lessons_viewed }}/{{ s.module.lessons | length }}</td>
+        <td>{{ '' if s.best_score is none else s.best_score ~ '%' }}</td>
+        <td>{{ s.attempts_used }}/{{ s.module.max_attempts }}{% if s.attempts_total != s.attempts_used %} <span class="small muted">({{ s.attempts_total }} total)</span>{% endif %}</td>
+        <td>
+          {% if s.state == BLOCKED %}
+          <form method="post" action="/admin/companions/{{ companion.id }}/reset" onsubmit="return confirm('Give {{ companion.name }} fresh attempts for {{ s.module.code }}?')">
+            <input type="hidden" name="module_code" value="{{ s.module.code }}">
+            <button class="btn btn-sm" type="submit">Reset attempts</button>
+          </form>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <div class="card-head">
+    <h2>Offline steps</h2>
+    {% if certificate %}<span class="badge badge-pass">🏅 Certified · {{ certificate.code }}</span>{% endif %}
+  </div>
+  <p class="muted small">Tick each step once it's done. The certificate is issued automatically when all online modules and all offline steps are complete.</p>
+  <div class="offline-list">
+    {% for step in offline_steps %}
+    {% set done = step.code in offline %}
+    <form method="post" action="/admin/companions/{{ companion.id }}/offline" class="offline-item {{ 'is-done' if done else '' }}">
+      <input type="hidden" name="step_code" value="{{ step.code }}">
+      <input type="hidden" name="done" value="{{ '0' if done else '1' }}">
+      <button type="submit" class="tickbox" aria-label="{{ 'Unmark' if done else 'Mark done' }}: {{ step.title }}">{{ '✓' if done else '' }}</button>
+      <div>
+        <div><strong>{{ step.title }}</strong>{% if done %} <span class="small muted">· done {{ offline[step.code].done_at.strftime('%d %b %Y') }}</span>{% endif %}</div>
+        <div class="small muted">{{ step.description }}</div>
+      </div>
+    </form>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="card">
+  <h2>Quiz history</h2>
+  {% if attempts %}
+  <table class="grid">
+    <thead><tr><th>When (UTC)</th><th>Module</th><th>Score</th><th>Result</th></tr></thead>
+    <tbody>
+      {% for a in attempts %}
+      <tr>
+        <td>{{ a.submitted_at.strftime('%d %b %Y, %H:%M') }}</td>
+        <td>{{ a.module_code }} {{ module_by_code[a.module_code].title if a.module_code in module_by_code else '' }}</td>
+        <td>{{ a.score }}/{{ a.total }} ({{ percent(a.score, a.total) }}%)</td>
+        <td>{{ 'Passed' if a.passed else 'Failed' }}{% if not a.counted %} <span class="small muted">(reset)</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}<p class="muted">No quizzes taken yet.</p>{% endif %}
+</section>
+
+<section class="card narrow-left">
+  <h2>Reset password</h2>
+  <form method="post" action="/admin/companions/{{ companion.id }}/password" class="form">
+    <label>New password (share it with them on call)
+      <input name="new_password" minlength="6" required>
+    </label>
+    <button class="btn btn-sm" type="submit">Set password</button>
+  </form>
+</section>
+{% endblock %}

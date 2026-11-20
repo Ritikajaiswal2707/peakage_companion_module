@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Certificate · {{ holder.name }}{% endblock %}
+{% block body_class %}cert-page{% endblock %}
+{% block content %}
+<div class="cert-actions no-print">
+  <a class="back" href="/dashboard">← My journey</a>
+  <button class="btn btn-sm" onclick="window.print()">Print / Save as PDF</button>
+</div>
+<div class="certificate" data-confetti>
+  <div class="cert-border">
+    <img src="{{ url_for('static', path='img/peakage-logo-dark.png') }}" alt="PeakAge" class="cert-logo">
+    <div class="cert-eyebrow">Companion Academy</div>
+    <div class="cert-title">Certificate of Completion</div>
+    <p class="cert-intro">This certifies that</p>
+    <div class="cert-name">{{ holder.name }}</div>
+    <p class="cert-body">has completed the PeakAge Companion Academy training: all online modules, the offline practice day, verification, a shadow visit and a supervised visit, and is certified to serve as a</p>
+    <div class="cert-role">PeakAge Certified Companion</div>
+    <div class="cert-meta">
+      <div><span>Certificate ID</span><b>{{ cert.code }}</b></div>
+      <div><span>Issued</span><b>{{ cert.issued_at.strftime('%d %B %Y') }}</b></div>
+      {% if holder.city %}<div><span>City</span><b>{{ holder.city }}</b></div>{% endif %}
+    </div>
+    <div class="cert-verify">Verify at {{ verify_url }}</div>
+    <div class="cert-motto">Right person, right time</div>
+  </div>
+</div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+{% endblock %}

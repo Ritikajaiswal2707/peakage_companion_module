@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ lesson.title }} · {{ module.title }}{% endblock %}
+{% block content %}
+<div class="read-progress" aria-hidden="true"><div></div></div>
+<a class="back" href="/modules/{{ module.code }}">← {{ module.title }}</a>
+
+<div class="lesson-dots" aria-label="Lessons in this module">
+  {% for l in module.lessons %}
+  <a href="/modules/{{ module.code }}/lessons/{{ loop.index0 }}" class="ldot {{ 'ldot-current' if loop.index0 == index else ('ldot-done' if loop.index0 < index else '') }}" title="{{ l.title }}">{{ loop.index }}</a>
+  {% endfor %}
+</div>
+
+<article class="card lesson">
+  <div class="eyebrow dark">Lesson {{ index + 1 }} of {{ module.lessons | length }}</div>
+  <h1>{{ lesson.title }}</h1>
+  {% if lesson.video_embed %}
+    <div class="video"><iframe src="{{ lesson.video_embed }}" title="{{ lesson.title }}" allowfullscreen loading="lazy"></iframe></div>
+  {% endif %}
+  <div class="prose">{{ lesson.html | safe }}</div>
+</article>
+
+<nav class="pager">
+  {% if index > 0 %}
+    <a class="btn btn-ghost" href="/modules/{{ module.code }}/lessons/{{ index - 1 }}">← Previous</a>
+  {% else %}<span></span>{% endif %}
+  {% if index + 1 < module.lessons | length %}
+    <a class="btn" href="/modules/{{ module.code }}/lessons/{{ index + 1 }}">Got it, next →</a>
+  {% else %}
+    <a class="btn" href="/modules/{{ module.code }}">Got it, go to quiz →</a>
+  {% endif %}
+</nav>
+{% endblock %}

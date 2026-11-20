@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Verify certificate {{ code }} · PeakAge{% endblock %}
+{% block content %}
+<section class="card auth-card center">
+  {% if cert and holder %}
+    <div class="verify-icon ok">✓</div>
+    <h1>Valid certificate</h1>
+    <p><strong>{{ holder.name }}</strong>{% if holder.city %} ({{ holder.city }}){% endif %} is a <strong>PeakAge Certified Companion</strong>.</p>
+    <p class="muted">Certificate {{ cert.code }} · issued {{ cert.issued_at.strftime('%d %B %Y') }}</p>
+  {% else %}
+    <div class="verify-icon bad">✗</div>
+    <h1>Not found</h1>
+    <p>No PeakAge certificate matches <strong>{{ code }}</strong>. Check the ID and try again.</p>
+  {% endif %}
+</section>
+{% endblock %}

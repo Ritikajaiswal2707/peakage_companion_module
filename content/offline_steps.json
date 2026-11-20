@@ -1,0 +1,22 @@
+[
+  {
+    "code": "offline_day",
+    "title": "Offline practice day",
+    "description": "Role-plays (first 15 minutes, elder personas), app and OTP hands-on, mock hospital walkthrough, emergency drill."
+  },
+  {
+    "code": "verification",
+    "title": "Police verification and references",
+    "description": "Police verification, ID and address check, and 2 reference calls completed."
+  },
+  {
+    "code": "shadow_visit",
+    "title": "Shadow visit",
+    "description": "Joined a senior companion on a real hospital visit and watched the full SOP."
+  },
+  {
+    "code": "supervised_visit",
+    "title": "Supervised visit",
+    "description": "Ran a real visit while the coordinator watched, scoring 4+ out of 5 on the rubric."
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "code": "T3",
+  "order": 8,
+  "title": "The WhatsApp visit report",
+  "track": "Technical",
+  "stage": "solo",
+  "summary": "The report is the child's only window into the visit. Send a complete, clear WhatsApp report within 2 hours, every time.",
+  "offline_note": "You'll write a full report from the mock hospital visit in the offline session.",
+  "pass_percent": 80,
+  "questions_per_quiz": 5,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "Why the report matters",
+      "video_url": "",
+      "body": "The child pays for PeakAge but wasn't in the room. **Your report is what they experience.** A great visit with a poor report feels like a poor visit to the family.\n\n- Send it on **WhatsApp to the child within 2 hours** of every visit.\n- Clear, short, factual. No medical opinions.\n- Include both **health** and **mood**. Families care about how papa *felt*, not just what the doctor said."
+    },
+    {
+      "title": "The template",
+      "video_url": "",
+      "body": "Copy this and fill every line:\n\n```\nPeakAge Visit Report: [Elder's name], [Date]\nCompanion: [Your name]\n\nHospital / Doctor: [Name, department]\nWhy we went: [Reason]\n\nDoctor said:\n1. [Instruction]\n2. [Instruction]\n\nMedicines:\n- [Name], [dose], [when], [how many days]\n\nTests done / pending: [List]\nNext visit: [Date] / [What to watch for]\nMood today: [Cheerful / Quiet / Worried / Irritated] + one line\nAnything you should know: [e.g. missed doses, pain, concern]\n\nPhotos: prescription, bills, reports (attached)\n```\n\nIf a field doesn't apply, write “None” instead of leaving it out."
+    },
+    {
+      "title": "Good report vs weak report",
+      "video_url": "",
+      "body": "| Weak | Good |\n| --- | --- |\n| “Visit done, all ok.” | “Dr. Sharma (Cardiology) increased BP tablet to twice a day for 30 days. ECG done, report on Friday.” |\n| “Medicines given.” | “Amlodipine 5mg: morning and night after food, 30 days. Bill photo attached.” |\n| “Uncle was fine.” | “Mood: cheerful. Talked a lot about his army days in the waiting room.” |\n| (missed doses not mentioned) | “Uncle mentioned he skips the night dose sometimes; doctor was informed.” |\n\n**Mood words:** say what you saw, don't diagnose. “Quiet, didn't want to talk much” is good. “Depressed” is not your call."
+    }
+  ],
+  "questions": [
+    {
+      "id": "t3-q1",
+      "text": "How and when does the visit report reach the child?",
+      "options": ["Email, next day", "WhatsApp, within 2 hours", "Phone call, within a week", "Only in the app, whenever"],
+      "answer": 1,
+      "explanation": "WhatsApp to the child within 2 hours of every visit."
+    },
+    {
+      "id": "t3-q2",
+      "text": "Which is the better way to write the medicines?",
+      "options": ["“Medicines given”", "“Amlodipine 5mg: morning and night after food, 30 days”", "“BP wali goli”", "“Same as before”"],
+      "answer": 1,
+      "explanation": "Name, dose, when, and for how many days."
+    },
+    {
+      "id": "t3-q3",
+      "text": "Uncle was quiet and didn't want to talk today. How do you write mood?",
+      "options": ["“Depressed”", "“Quiet, didn't want to talk much today”", "Leave it out", "“Mentally unwell”"],
+      "answer": 1,
+      "explanation": "Describe what you saw. Don't diagnose."
+    },
+    {
+      "id": "t3-q4",
+      "text": "What should be attached to every report?",
+      "options": ["A selfie with the elder", "Photos of prescription, bills and reports", "Nothing", "A voice note only"],
+      "answer": 1,
+      "explanation": "Prescription, bills and reports. The photos also remove any money suspicion."
+    },
+    {
+      "id": "t3-q5",
+      "text": "No tests were done today. What do you write in that field?",
+      "options": ["Leave the field out", "“None”", "Guess what tests may be needed", "“All normal”"],
+      "answer": 1,
+      "explanation": "Fill every field. Write “None” if it doesn't apply."
+    },
+    {
+      "id": "t3-q6",
+      "text": "Why does mood belong in the report?",
+      "options": ["It doesn't", "Families care about how their parent felt, not just the medical update", "To diagnose depression", "To fill space"],
+      "answer": 1,
+      "explanation": "Wellbeing is part of what PeakAge offers. The child wants to know how papa felt."
+    }
+  ]
+}

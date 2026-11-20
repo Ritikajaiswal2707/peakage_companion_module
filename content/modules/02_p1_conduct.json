@@ -1,0 +1,80 @@
+{
+  "code": "P1",
+  "order": 2,
+  "title": "Conduct, dress and punctuality",
+  "track": "Professionalism",
+  "stage": "solo",
+  "summary": "How a PeakAge companion shows up: on time, presentable, respectful and focused on the elder.",
+  "offline_note": "",
+  "pass_percent": 80,
+  "questions_per_quiz": 5,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "Right person, right time",
+      "video_url": "",
+      "body": "PeakAge's promise to families is **right person, right time**. A no-show or a late arrival breaks that promise instantly. The child far away has planned around you, and the elder is waiting dressed and ready.\n\n- **Reach 10 minutes early.** Wait outside if needed.\n- **Running late?** Call the coordinator and the family *before* the visit time, not after.\n- **Can't make it?** Tell the coordinator as early as possible so a backup can go.\n\n> A no-show without informing is a serious strike. Two strikes and you are off the platform."
+    },
+    {
+      "title": "Dress, ID and phone",
+      "video_url": "",
+      "body": "- **Dress:** clean, simple and modest. Wear the PeakAge T-shirt if you have one.\n- **ID:** always carry your PeakAge ID card and show it when you arrive.\n- **Phone:** only for the visit (updates to the child, notes, booking). No personal calls, social media or games during the visit.\n- **Language:** respectful always. “Aap”, never “tum”. Uncle-ji, Aunty-ji, or how the family prefers.\n- **Food and gifts:** accepting a cup of tea is polite. Don't ask for anything. Money or costly gifts are covered in the Money rules module."
+    },
+    {
+      "title": "Respect, dignity and privacy",
+      "video_url": "",
+      "body": "- **Sanskaar matters.** Greet with namaste. Let the elder lead. Never talk down to them, even if they are slow or confused.\n- **Cultural sensitivity:** respect their religion, food habits and customs. Don't comment on them.\n- **Physical help with dignity:** offer before you help (“Uncle, haath pakad loon?”). Never make them feel weak.\n- **Privacy:** never post an elder's photo or story on social media. Photos are only for the report to the child. Family matters you hear stay private.\n- **Never take sides** in family matters (“haan aunty, uncle galat karte hain” is a mistake)."
+    }
+  ],
+  "questions": [
+    {
+      "id": "p1-q1",
+      "text": "You'll be 15 minutes late because of traffic. When should you inform the coordinator and family?",
+      "options": ["When you arrive", "Before the visit time, as soon as you know", "Only if they call you", "After the visit"],
+      "answer": 1,
+      "explanation": "Always call before the visit time. Families plan around you."
+    },
+    {
+      "id": "p1-q2",
+      "text": "How early should you reach for a visit?",
+      "options": ["Exactly on time", "10 minutes early", "1 hour early", "Within 15 minutes after"],
+      "answer": 1,
+      "explanation": "Reach 10 minutes early so the visit starts on time."
+    },
+    {
+      "id": "p1-q3",
+      "text": "Aunty is sharing a long story while you wait for the doctor. A friend messages you. What do you do?",
+      "options": ["Reply quickly, it's just one message", "Keep the phone away and keep listening", "Tell aunty to wait", "Put the call on speaker"],
+      "answer": 1,
+      "explanation": "No personal phone use during visits. Your attention is the service."
+    },
+    {
+      "id": "p1-q4",
+      "text": "Can you post a nice photo with uncle on your Instagram if he looks happy?",
+      "options": ["Yes, if he smiles", "Yes, without his face", "No, photos are only for the report to the child", "Yes, if you tag PeakAge"],
+      "answer": 2,
+      "explanation": "Never post elders' photos or stories on social media. Photos are only for the report."
+    },
+    {
+      "id": "p1-q5",
+      "text": "Aunty complains that her husband never helps at home. What is the right response?",
+      "options": ["Agree that uncle is wrong", "Listen and empathise, without taking sides", "Tell her daughter", "Tell uncle to help more"],
+      "answer": 1,
+      "explanation": "Listen with empathy, but never take sides or comment on family members."
+    },
+    {
+      "id": "p1-q6",
+      "text": "What happens after two no-shows without informing?",
+      "options": ["A warning", "Nothing", "The companion is removed from the platform", "A pay cut only"],
+      "answer": 2,
+      "explanation": "No-shows break the family's trust. Two strikes and the companion is off the platform."
+    },
+    {
+      "id": "p1-q7",
+      "text": "Uncle walks slowly up the stairs. What's the respectful way to help?",
+      "options": ["Grab his arm and pull", "Ask first: “Uncle, haath pakad loon?”", "Tell him to hurry", "Walk ahead and wait at the top"],
+      "answer": 1,
+      "explanation": "Offer before helping. Physical help should never make an elder feel weak."
+    }
+  ]
+}

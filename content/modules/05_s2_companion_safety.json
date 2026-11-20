@@ -1,0 +1,80 @@
+{
+  "code": "S2",
+  "order": 5,
+  "title": "Companion safety and boundaries",
+  "track": "Safety",
+  "stage": "solo",
+  "summary": "You have the right to feel safe. What to do when an elder or family crosses a line, and how to keep healthy boundaries.",
+  "offline_note": "Short group discussion in the offline session.",
+  "pass_percent": 80,
+  "questions_per_quiz": 5,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "Your right to end a visit",
+      "video_url": "",
+      "body": "Most elders are warm. But if an elder or family member is **abusive, threatening or behaves inappropriately** with you, you have the right to end the visit.\n\n1. Stay calm. Say politely: “Main abhi ke liye visit yahin rok raha/rahi hoon.”\n2. Leave to a safe place.\n3. Call the coordinator immediately.\n4. If you are in danger, call **112**.\n\nYou will **never** be penalised for ending a visit for safety reasons. PeakAge will back you."
+    },
+    {
+      "title": "Healthy boundaries",
+      "video_url": "",
+      "body": "Elders can get attached, which is good. But some things cross a line:\n\n- **Late-night calls** or calls for non-visit things → kindly say you'll talk on the next visit, and tell the coordinator if it continues.\n- **Personal favours** (“beta, mera bank ka kaam kar do”, extra unpaid hours) → “Uncle, yeh main PeakAge ke through hi kar sakta hoon, main coordinator ko bata deta hoon.”\n- **“Sirf wahi ladka chahiye”** (only you, nobody else) → it's a compliment, but tell the coordinator so there's a backup the elder also knows.\n- **Keep visits on the app.** No private arrangements with families."
+    },
+    {
+      "title": "Staying safe on visits",
+      "video_url": "",
+      "body": "- Keep your **live location on** during the visit.\n- The coordinator should always know where you are.\n- If something feels wrong when you arrive (aggressive person, intoxicated family member), don't go in. Call the coordinator.\n- Female companions are usually matched with mothers. If you feel uncomfortable with any assignment, tell the coordinator; it will be respected."
+    }
+  ],
+  "questions": [
+    {
+      "id": "s2-q1",
+      "text": "An elder's relative behaves inappropriately with you during a visit. What do you do?",
+      "options": ["Ignore it to finish the visit", "End the visit politely, go somewhere safe, call the coordinator", "Argue with them", "Wait until the end and tell the child"],
+      "answer": 1,
+      "explanation": "You have the right to end the visit. Get safe, then call the coordinator. In danger: 112."
+    },
+    {
+      "id": "s2-q2",
+      "text": "Will you be penalised for ending a visit for your safety?",
+      "options": ["Yes, a strike", "Yes, no pay", "No, PeakAge will back you", "Only if the family complains"],
+      "answer": 2,
+      "explanation": "Safety comes first. You'll never be penalised for ending an unsafe visit."
+    },
+    {
+      "id": "s2-q3",
+      "text": "Uncle starts calling you at 10 pm to chat. What should you do?",
+      "options": ["Block him", "Kindly say you'll talk on the next visit, and tell the coordinator if it continues", "Talk every night", "Tell him off"],
+      "answer": 1,
+      "explanation": "Be kind but keep boundaries, and involve the coordinator."
+    },
+    {
+      "id": "s2-q4",
+      "text": "A family asks you to come privately, outside the app, for a lower price. What do you do?",
+      "options": ["Agree, it's more money for you", "Politely decline; all visits go through PeakAge", "Agree once", "Ask for a higher price"],
+      "answer": 1,
+      "explanation": "Keep visits on the app. It protects you, the elder and the family."
+    },
+    {
+      "id": "s2-q5",
+      "text": "You arrive and a family member seems drunk and aggressive. What do you do?",
+      "options": ["Go in anyway", "Don't go in; call the coordinator", "Ask the elder to come out alone", "Call the child and go in"],
+      "answer": 1,
+      "explanation": "If it feels unsafe, don't enter. Call the coordinator."
+    },
+    {
+      "id": "s2-q6",
+      "text": "What should be on during every visit?",
+      "options": ["Music", "Your live location", "Phone silent mode only", "Nothing"],
+      "answer": 1,
+      "explanation": "Keep live location on so the coordinator knows where you are."
+    },
+    {
+      "id": "s2-q7",
+      "text": "Uncle says he only wants you and refuses anyone else. What's the right move?",
+      "options": ["Feel proud and do nothing", "Tell the coordinator so a backup companion the elder knows can be arranged", "Promise to always come", "Refuse to visit him again"],
+      "answer": 1,
+      "explanation": "Over-attachment is common. Involve the coordinator so there's a known backup."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Quiz · {{ module.title }}{% endblock %}
+{% block content %}
+<a class="back" href="/modules/{{ module.code }}">← {{ module.title }}</a>
+
+<section class="quiz-top card">
+  <div>
+    <div class="eyebrow dark">Quiz · attempt {{ status.attempts_used + 1 }} of {{ module.max_attempts }}</div>
+    <h1>{{ module.title }}</h1>
+    <p class="muted small no-js-only">Answer every question, then submit. Pass mark {{ module.pass_percent }}%.</p>
+  </div>
+  <div class="quiz-meter js-only">
+    <div class="quiz-count"><span id="q-current">1</span>/<span>{{ questions | length }}</span></div>
+    <div class="quiz-score">✓ <span id="q-score">0</span> correct</div>
+  </div>
+  <div class="quiz-bar js-only"><div id="q-bar"></div></div>
+</section>
+
+<form method="post" action="/modules/{{ module.code }}/quiz" class="quiz" id="quiz"
+      data-attempt="{{ attempt.id }}" data-total="{{ questions | length }}" data-pass="{{ module.pass_percent }}">
+  <input type="hidden" name="attempt_id" value="{{ attempt.id }}">
+  {% for item in questions %}
+  {% set answered = item.chosen is not none %}
+  <fieldset class="card question {{ 'is-answered' if answered else '' }} {{ ('is-right' if item.correct else 'is-wrong') if answered else '' }}"
+            data-qid="{{ item.q.id }}" data-index="{{ loop.index0 }}">
+    <legend><span class="qnum">Question {{ loop.index }}</span>{{ item.q.text }}</legend>
+    <div class="options">
+    {% for value, text in item.options %}
+      <label class="option {{ 'opt-correct' if answered and value == item.q.answer }} {{ 'opt-wrong' if answered and value == item.chosen and not item.correct }}">
+        <input type="radio" name="q_{{ item.q.id }}" value="{{ value }}" {% if answered %}disabled {% if value == item.chosen %}checked{% endif %}{% else %}required{% endif %}>
+        <span class="opt-letter">{{ "ABCDEFG"[loop.index0] }}</span>
+        <span class="opt-text">{{ text }}</span>
+      </label>
+    {% endfor %}
+    </div>
+    <div class="feedback" {% if not answered %}hidden{% endif %}>
+      <div class="feedback-title">{% if answered %}{{ 'Sahi jawab! ✓' if item.correct else 'Not quite ✗' }}{% endif %}</div>
+      <div class="feedback-text">{% if answered %}{{ item.q.explanation }}{% endif %}</div>
+    </div>
+    <div class="q-nav js-only">
+      <button type="button" class="btn q-next" {% if not answered %}disabled{% endif %}>{{ 'See my result →' if loop.last else 'Next question →' }}</button>
+    </div>
+  </fieldset>
+  {% endfor %}
+  <button class="btn btn-block no-js-only" type="submit">Submit answers</button>
+</form>
+{% endblock %}

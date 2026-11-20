@@ -1,0 +1,87 @@
+{
+  "code": "B1",
+  "order": 1,
+  "title": "The 5 roles of a PeakAge companion",
+  "track": "Behavioural",
+  "stage": "solo",
+  "summary": "What a PeakAge companion actually does on every visit, and why listening matters more than anything else.",
+  "offline_note": "",
+  "pass_percent": 80,
+  "questions_per_quiz": 5,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "You are a responsible beta or beti, not an attendant",
+      "video_url": "",
+      "body": "Most PeakAge families have children living far away, in Bengaluru, Dubai or the US. They can't take papa to the doctor. You go in their place.\n\nThat makes you more than a helper. Think of yourself as a **responsible nephew or niece**: educated enough to talk to a doctor, patient enough to listen, and trusted enough that a son in Dubai feels relaxed when you are with his father.\n\n> On one visit, our founder helped an Amma and her bahu from the Lucknow outskirts. He got the documents done, gave clear instructions and fought a wrong pharmacy bill. Afterwards they said he was like their own son. That is the standard.\n\n**Every elder wants to be heard.** In every visit we've studied, the elder liked to talk: about their life, their work, their illness, their family. Listening is the number one skill of this job."
+    },
+    {
+      "title": "The 5 roles",
+      "video_url": "",
+      "body": "On every visit you play five roles.\n\n| Role | What it means | Example |\n| --- | --- | --- |\n| **1. Listener** | Let them talk. Don't judge, don't take sides. | Aunty tells you the same story again. You listen like it's the first time. |\n| **2. Translator** | Turn doctor-speak into simple Hindi and write it down. | “Doctor ne bola hai yeh goli subah khaane ke baad, 10 din tak.” |\n| **3. Doer** | Bookings, app, OTP, documents, pharmacy. | You book the cab and carry the file. |\n| **4. Advocate** | Politely stand up for them. | You notice the pharmacy bill is wrong and get it corrected, calmly. |\n| **5. Bridge to the child** | Send a clear update after every visit, covering health and mood. | A WhatsApp report to the son within 2 hours. |\n\nIf you do the hospital work perfectly but don't listen, the elder won't want you again. If you listen but miss the doctor's instructions, the family can't trust you. You need all five."
+    },
+    {
+      "title": "The trust curve and the golden line",
+      "video_url": "",
+      "body": "### The trust curve\nMost elders are guarded at first and comfortable later. Some are suspicious (“tum log sab paise ke liye karte ho”). Some are quiet. Some over-act their illness. **The first 15 minutes decide the visit.** Don't rush into work. Greet, introduce yourself, and get them talking about themselves.\n\n### The golden line\n**Bend on small things. Stay firm on safety, health and money.**\n\n- Small things: which route, which chair, what to talk about, how fast to walk. Let the elder decide. Agreeing on small things (“haan mein haan milana”) builds trust.\n- Firm things: telling the doctor the truth about health, never handling cash, never ignoring a danger sign. Here you don't bend, but you stay polite.\n\n### Same companion, same family\nWhenever possible, PeakAge sends the same companion to the same family. By the third visit, the relationship does half the work."
+    }
+  ],
+  "questions": [
+    {
+      "id": "b1-q1",
+      "text": "What is the number one skill of a PeakAge companion?",
+      "options": ["Driving and booking cabs", "Listening to the elder", "Knowing medicines", "Speaking English"],
+      "answer": 1,
+      "explanation": "Every elder we've studied wants to be heard. Listening is the core skill; the hospital work comes second."
+    },
+    {
+      "id": "b1-q2",
+      "text": "The doctor says something complicated. Which role are you playing when you explain it to uncle in simple Hindi and write it down?",
+      "options": ["Doer", "Advocate", "Translator", "Listener"],
+      "answer": 2,
+      "explanation": "Turning doctor-speak into simple Hindi is the Translator role."
+    },
+    {
+      "id": "b1-q3",
+      "text": "You notice the pharmacy has charged for 3 strips but given 2. You calmly get it corrected. Which role is this?",
+      "options": ["Advocate", "Bridge to the child", "Listener", "Translator"],
+      "answer": 0,
+      "explanation": "Politely standing up for the elder (billing, queues, clarity) is the Advocate role."
+    },
+    {
+      "id": "b1-q4",
+      "text": "Uncle wants to sit in a different chair in the waiting area than the one you picked. What should you do?",
+      "options": ["Explain why your chair is better", "Let him choose; it's a small thing", "Call the child", "Ignore it"],
+      "answer": 1,
+      "explanation": "Bend on small things. Letting him decide builds trust."
+    },
+    {
+      "id": "b1-q5",
+      "text": "When are elders usually most guarded during a visit?",
+      "options": ["At the pharmacy", "In the first 15–20 minutes", "On the ride back", "During the report"],
+      "answer": 1,
+      "explanation": "Trust follows a curve: guarded first, comfortable later. The first 15 minutes decide the visit."
+    },
+    {
+      "id": "b1-q6",
+      "text": "Which of these is a ‘firm’ thing where the companion must not bend?",
+      "options": ["Which route to take", "What to talk about", "Telling the doctor the truth about health", "How fast to walk"],
+      "answer": 2,
+      "explanation": "Stay firm on safety, health and money. Everything else, the elder decides."
+    },
+    {
+      "id": "b1-q7",
+      "text": "Why does PeakAge try to send the same companion to the same family?",
+      "options": ["It's cheaper", "Trust builds over visits, and the relationship does half the work", "Companions prefer it", "It's a legal requirement"],
+      "answer": 1,
+      "explanation": "Elders are often cranky with strangers. By the third visit with the same person, trust is much stronger."
+    },
+    {
+      "id": "b1-q8",
+      "text": "After the visit, you send the son a WhatsApp update about health and mood. Which role is this?",
+      "options": ["Doer", "Listener", "Bridge to the child", "Advocate"],
+      "answer": 2,
+      "explanation": "Keeping the child informed after every visit is the Bridge to the child role."
+    }
+  ]
+}

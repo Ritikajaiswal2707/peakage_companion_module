@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Create account · PeakAge Companion Academy{% endblock %}
+{% block body_class %}auth{% endblock %}
+{% block hero %}
+<section class="auth-hero">
+  <div class="auth-hero-inner">
+    <p class="eyebrow">Welcome to PeakAge</p>
+    <h1>Your journey to becoming a PeakAge Certified Companion starts here.</h1>
+    <div class="hero-steps">
+      <span><b>9</b> online modules</span>
+      <span><b>4</b> offline steps</span>
+      <span><b>1</b> certificate 🏅</span>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block content %}
+<section class="card auth-card">
+  <h2>Create your account</h2>
+  <form method="post" action="/register" class="form">
+    <label>Full name
+      <input name="name" value="{{ form.name or '' }}" autocomplete="name" required>
+    </label>
+    <label>Mobile number
+      <input name="phone" type="tel" inputmode="numeric" value="{{ form.phone or '' }}" autocomplete="tel" placeholder="98xxxxxxxx" required>
+    </label>
+    <label>City
+      <input name="city" value="{{ form.city or '' }}" placeholder="Lucknow / Nagpur / Bengaluru">
+    </label>
+    <div class="form-row">
+      <label>Password
+        <input name="password" type="password" autocomplete="new-password" minlength="6" placeholder="6+ characters" required>
+      </label>
+      <label>Confirm password
+        <input name="confirm" type="password" autocomplete="new-password" minlength="6" required>
+      </label>
+    </div>
+    {% if needs_code %}
+    <label>Registration code <span class="muted">(from your coordinator)</span>
+      <input name="code" required>
+    </label>
+    {% endif %}
+    <button class="btn btn-block" type="submit">Create account</button>
+  </form>
+  <p class="muted small center">Already registered? <a href="/login">Log in</a></p>
+</section>
+{% endblock %}

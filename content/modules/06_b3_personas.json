@@ -1,0 +1,120 @@
+{
+  "code": "B3",
+  "order": 6,
+  "title": "Elder personas: who you'll meet and how to handle them",
+  "track": "Behavioural",
+  "stage": "solo",
+  "summary": "The 7 types of elders PeakAge companions meet, what each one needs, and what never to do.",
+  "offline_note": "Each persona is practised as a role-play in the offline session.",
+  "pass_percent": 80,
+  "questions_per_quiz": 8,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "Why personas matter",
+      "video_url": "",
+      "body": "The same sentence can win one uncle and annoy another. Personas help you recognise who you're with in the first few minutes and adjust.\n\nTwo things are true for **every** persona:\n\n1. **Everyone wants to be heard.** Ask about them first.\n2. **The trust curve.** Guarded first, comfortable later. Don't rush.\n\n> Elders are people, not boxes. A persona is a starting guess. Watch and adjust."
+    },
+    {
+      "title": "Saheb, Kissa-go and Shant Sajjan",
+      "video_url": "",
+      "body": "### 1. Saheb: the proud patriarch\n- **Nature:** ego, stubborn, suspicious at first, attached once comfortable\n- **Needs:** respect, and to feel he's still in charge\n- **Win him:** listen to his stories, praise him, agree on small things, steer gently\n- **Never:** argue, correct him in front of others, rush him\n- **Watch:** over-attachment (“sirf wahi ladka chahiye”)\n\n### 2. Kissa-go: the warm storyteller\n- **Nature:** aware, smart, warm, loves sharing experiences\n- **Needs:** an intelligent listener\n- **Win him:** ask about his life and work, show real curiosity\n- **Never:** look bored or check your phone\n- **Watch:** the visit turning into a 2-hour chat while the work slips. Keep it on time.\n\n### 3. Shant Sajjan: the quiet one\n- **Nature:** silent at first, opens up when asked, not tech-savvy\n- **Needs:** someone who starts the conversation, plus help with the app and bookings\n- **Win him:** easy questions about family, past work, his city; handle tech without making him feel slow\n- **Never:** stay silent too. The visit becomes transactional."
+    },
+    {
+      "title": "Bhole Babu and Akeli Amma",
+      "video_url": "",
+      "body": "### 4. Bhole Babu / Bholi Amma: the trusting follower\n- **Nature:** uneducated or semi-educated, naive, trusts doctors blindly, can't follow details, may not speak English\n- **Needs:** a translator and advocate\n- **Win them:** explain in simple Hindi, write instructions down, check every bill, act like their own son or daughter\n- **Never:** assume they understood\n- **Watch:** misunderstood medicines, overcharging\n\n### 5. Akeli Amma: the lonely confidante\n- **Nature:** welcoming, repeats herself, vents about family, overthinks, feels guilty about money, obeys her child\n- **Needs:** emotional company, listening without judgement\n- **Win her:** patience, warmth. “Shanti didi ne bola hai” (the child's name) often gets cooperation.\n- **Never:** say “aap yeh bata chuke ho”, take sides in family matters, accept cash\n- **Watch:** her mood across visits. Report it if it gets worse."
+    },
+    {
+      "title": "Shakki/Kanjoos and Bimaar-Chidchida",
+      "video_url": "",
+      "body": "### 6. Shakki / Kanjoos: the suspicious, money-tight one\n- **Nature:** questions every rupee, thinks “yeh log loot rahe hain”\n- **Needs:** transparency\n- **Win him:** show every bill before payment, photograph every receipt, payments only through the app or the child\n- **Never:** get defensive. Show, don't argue.\n\n### 7. Bimaar-Chidchida: sick, depressed and cranky\n- **Nature:** dependent and resistant at the same time. The hardest case.\n- **Needs:** patience and a senior companion\n- **Rule:** only senior companions are assigned, with the coordinator involved\n- **Watch:** red flags (see the Emergency module). Irritability can be a sign of pain or illness.\n\n### Quick reference\n| Persona | One line |\n| --- | --- |\n| Saheb | Respect him, never argue |\n| Kissa-go | Listen, but keep on task |\n| Shant Sajjan | You start the conversation |\n| Bhole Babu | Translate, advocate, check every bill |\n| Akeli Amma | Listen patiently, never take sides |\n| Shakki/Kanjoos | App payments only, show bills |\n| Bimaar-Chidchida | Senior companion with coordinator support |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "b3-q1",
+      "text": "Uncle says proudly, “Main 30 saal bank manager raha hoon, mujhe mat sikhao.” Which persona is this most likely?",
+      "options": ["Akeli Amma", "Saheb", "Shant Sajjan", "Bhole Babu"],
+      "answer": 1,
+      "explanation": "Ego and wanting to stay in charge are signs of Saheb. Respect him, never argue."
+    },
+    {
+      "id": "b3-q2",
+      "text": "Aunty tells you the same story for the third time. What do you say?",
+      "options": ["“Aunty, aap yeh bata chuke ho”", "Listen as if it's the first time", "Change the topic immediately", "Check your phone"],
+      "answer": 1,
+      "explanation": "Never say ‘aap bata chuke ho’. If repetition gets worse over visits, quietly tell the coordinator."
+    },
+    {
+      "id": "b3-q3",
+      "text": "Uncle hasn't said a word in 10 minutes of the cab ride. What should you do?",
+      "options": ["Stay silent to respect him", "Start with easy questions about his family or past work", "Call the child", "Play music"],
+      "answer": 1,
+      "explanation": "Shant Sajjan opens up when asked. Don't match his silence."
+    },
+    {
+      "id": "b3-q4",
+      "text": "Uncle nods at everything the doctor says but can't tell you afterwards what was said. Which persona, and what do you do?",
+      "options": ["Saheb; let him be", "Bhole Babu; explain in simple Hindi and write it down", "Kissa-go; keep chatting", "Shakki; show the bill"],
+      "answer": 1,
+      "explanation": "Bhole Babu trusts blindly but doesn't follow details. Translate and write it down."
+    },
+    {
+      "id": "b3-q5",
+      "text": "A suspicious uncle asks, “Tumne zyada toh nahi diya?” What's the best response?",
+      "options": ["Get offended", "Show him the bill and receipt and check it together", "Ignore the question", "Tell the child he's difficult"],
+      "answer": 1,
+      "explanation": "With Shakki/Kanjoos, show, don't argue. Transparency builds trust."
+    },
+    {
+      "id": "b3-q6",
+      "text": "Kissa-go uncle has been sharing stories for 40 minutes and you need to leave for the hospital. What do you do?",
+      "options": ["Interrupt rudely", "Keep listening and miss the appointment", "Warmly suggest continuing the story in the cab", "Leave without him"],
+      "answer": 2,
+      "explanation": "Enjoy his stories but keep the visit on time."
+    },
+    {
+      "id": "b3-q7",
+      "text": "Aunty doesn't want to go for her test. She always listens to her daughter Shanti. What can help?",
+      "options": ["Force her", "Say “Shanti didi ne bola hai ki test zaroori hai”", "Cancel the visit", "Tell her she'll get worse"],
+      "answer": 1,
+      "explanation": "For compliant parents like Akeli Amma, the child's voice is a lever. (It can backfire with a Saheb.)"
+    },
+    {
+      "id": "b3-q8",
+      "text": "Who should be assigned to a sick, depressed and cranky elder (Bimaar-Chidchida)?",
+      "options": ["Any new companion", "Only a senior companion, with the coordinator involved", "The youngest companion", "Nobody"],
+      "answer": 1,
+      "explanation": "This is the hardest persona. Only seniors, with coordinator oversight."
+    },
+    {
+      "id": "b3-q9",
+      "text": "Saheb uncle insists on a route to the hospital that's 10 minutes longer. It's not unsafe. What do you do?",
+      "options": ["Insist on the faster route", "Go his way; it's a small thing", "Call the coordinator", "Cancel the cab"],
+      "answer": 1,
+      "explanation": "Bend on small things. Agreeing builds trust with a Saheb."
+    },
+    {
+      "id": "b3-q10",
+      "text": "What's true for every persona?",
+      "options": ["They all dislike talking", "They all want to be heard", "They all need physical help", "They all are suspicious forever"],
+      "answer": 1,
+      "explanation": "Everyone wants to be heard. Listening is the universal skill."
+    },
+    {
+      "id": "b3-q11",
+      "text": "Akeli Amma says her husband never helps and talks only to outsiders. What do you do?",
+      "options": ["Agree with her", "Defend the husband", "Listen with empathy without taking sides", "Tell the husband"],
+      "answer": 2,
+      "explanation": "Be her confidante, but never take sides in family matters."
+    },
+    {
+      "id": "b3-q12",
+      "text": "Shant Sajjan uncle struggles to use the app to see his booking. What's the right approach?",
+      "options": ["Do it quickly and say “bas itna sa hai”", "Help patiently without making him feel slow", "Tell him to ask his son", "Skip it"],
+      "answer": 1,
+      "explanation": "Handle the tech for him without making him feel slow."
+    }
+  ]
+}

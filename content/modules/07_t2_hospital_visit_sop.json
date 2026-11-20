@@ -1,0 +1,168 @@
+{
+  "code": "T2",
+  "order": 7,
+  "title": "Hospital visit SOP",
+  "track": "Technical",
+  "stage": "solo",
+  "summary": "Run a hospital visit end to end: the prep call the day before, the doctor's cabin, the pharmacy, and the report to the child within 2 hours.",
+  "offline_note": "Mock hospital walkthrough, a disclosure role-play and a pharmacy overbilling scenario in the offline session, then 1 shadow visit.",
+  "pass_percent": 80,
+  "questions_per_quiz": 10,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "Why this visit matters, and the 8 phases",
+      "video_url": "",
+      "body": "The hospital is where the child **can't** be present, so it's where you earn the family's trust.\n\n- Gulshan's father trusts doctors completely but often doesn't understand what they said. Without someone repeating it back and explaining, he goes home with the wrong idea of his own treatment.\n- Amma's family was being overcharged at the pharmacy. Politely checking the bill made the companion their hero.\n\n**The 8 phases of every hospital visit:**\n\n| # | Phase |\n| --- | --- |\n| 0 | The day before: prep call |\n| 1 | Pickup |\n| 2 | Registration |\n| 3 | OPD wait |\n| 4 | Doctor's cabin |\n| 5 | Tests and pharmacy |\n| 6 | Return and explain |\n| 7 | WhatsApp report to the child |"
+    },
+    {
+      "title": "Phases 0 and 1: the day before and pickup",
+      "video_url": "",
+      "body": "### Phase 0: the day before\nCall the **elder** and the **child**:\n- Confirm time, hospital, doctor and department.\n- Remind them which documents to keep ready.\n- **Ask the child: “Doctor se kya poochna hai?”** Write their questions down.\n\n**Key rule:** never walk in without the child's questions.\n\n### Phase 1: pickup\n- Arrive **10 minutes early**. Start the visit with the **OTP** in the app.\n- Check the documents:\n    - ID (Aadhaar or similar)\n    - Old prescriptions and reports\n    - Current medicine list\n    - Insurance or hospital card, if any\n- Help the elder into the cab or auto safely.\n\n**Key rule:** a document is missing? Call the child **before** leaving."
+    },
+    {
+      "title": "Phases 2 and 3: registration and the OPD wait",
+      "video_url": "",
+      "body": "### Phase 2: registration\n- Get the token, open or update the file.\n- **Payment:** the elder pays directly or the child pays remotely. **No cash through you.**\n- Take a **photo of every receipt.**\n\n### Phase 3: OPD wait\n- Find a seat, offer water, know where the washroom is (long waits are hard for elders).\n- Keep the conversation going. This is where trust builds.\n- Track the queue.\n- WhatsApp the child: **“Pahunch gaye, token #12.”**\n\n**Key rule:** if the delay goes over **1 hour**, update the child."
+    },
+    {
+      "title": "Phase 4: inside the doctor's cabin",
+      "video_url": "",
+      "body": "1. **Let the elder speak first.** It's their health and their dignity.\n2. **Ask the child's questions** from your list.\n3. **Take notes** of everything: diagnosis words, medicines, tests, warning signs, follow-up date.\n4. **Repeat back every instruction** to the doctor before you leave.\n\n> “Doctor sahab, confirm kar loon: yeh dawai subah-shaam, khaane ke baad, 10 din tak?”\n\n5. **Always ask:** “Kis cheez pe dhyaan rakhna hai? Kab wapas aana hai?”\n\n**Never** answer for the elder about their symptoms, and never give your own opinion to the doctor."
+    },
+    {
+      "title": "The disclosure rule: when the elder wants to hide something",
+      "video_url": "",
+      "body": "**Situation:** papa says, “Doctor ko mat batana main dawai skip karta hoon.”\n\n**Principle:** on health and safety, the truth always reaches the doctor and the child. On everything else (food, pace, route, what to talk about), the elder decides.\n\n1. **Give him the chance first, privately, before the cabin:** “Uncle, doctor sahi baat jaanenge tabhi sahi dawai denge. Aap khud bata dijiye, main saath hoon.”\n2. **If he refuses, tell the doctor gently, in front of him.** Frame it as a difficulty, not a fault: “Doctor sahab, uncle ko kabhi-kabhi dawai lene mein dikkat hoti hai, kuch doses miss ho jaate hain.” **Never behind his back. Never lie to the doctor.**\n3. **Always include it in the WhatsApp report to the child,** as a plain fact with no blame.\n4. **If it keeps happening,** tell the coordinator.\n\nAt onboarding, both the elder and the child are told that the companion shares health facts with the doctor and the child. So this isn't betrayal; it's what everyone agreed to."
+    },
+    {
+      "title": "Phase 5: tests and pharmacy",
+      "video_url": "",
+      "body": "- Guide the elder through tests: where to go, what to carry, whether fasting is needed (ask the staff).\n- At the pharmacy, **match the bill to the prescription:**\n    - Right medicines?\n    - Right quantity (strips, days)?\n    - Right price?\n- If something is off: **firm and polite.** “Bhaiya, ek baar bill dobara check kar lijiye, quantity match nahi ho rahi.”\n- **Different brand offered?** Substitutions are the **doctor's** call, never yours. Confirm with the doctor's desk and tell the child.\n- If it gets heated, **stop and call the coordinator.** Never fight."
+    },
+    {
+      "title": "Phase 6: return and explain",
+      "video_url": "",
+      "body": "At home, before you leave:\n\n1. Explain what the doctor said in **simple Hindi**: “Uncle, doctor ne teen cheezein boli hain. Pehli…”\n2. Write a **medicine chart**: medicine name, when (morning/afternoon/night, before or after food), how much, for how many days.\n3. Make sure the elder (or someone at home) understands it. Ask them to tell it back to you.\n\n**Key rule:** read and explain only. Never change anything the doctor wrote."
+    },
+    {
+      "title": "Phase 7: the report, and persona tips",
+      "video_url": "",
+      "body": "### Phase 7: WhatsApp report to the child\nSend within **2 hours of every visit.** Details of the format are in the next module (Visit report).\n\n### Never\n- Suggest, change or stop a medicine\n- Pay from your own pocket or handle the elder's cash\n- Argue with the doctor, staff or pharmacist\n- Discuss the diagnosis with anyone other than the child\n- Skip or delay the report\n\n### By persona\n| Persona | What changes |\n| --- | --- |\n| Saheb | Let him lead with the doctor, then add your questions |\n| Kissa-go | Enjoy his stories in the wait, but keep on time |\n| Shant Sajjan | Start the conversation in the wait |\n| Bhole Babu | Repeat back twice, write everything down, check every bill line by line |\n| Akeli Amma | Give her time. Note her mood in the report. |\n| Shakki/Kanjoos | Show every bill before payment |\n| Bimaar-Chidchida | Senior companion only. Watch for red flags. |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "t2-q1",
+      "text": "What must you collect from the child in the prep call the day before?",
+      "options": ["Their bank details", "Their questions for the doctor", "Their home address", "Nothing, just confirm the time"],
+      "answer": 1,
+      "explanation": "Never walk in without the child's questions for the doctor."
+    },
+    {
+      "id": "t2-q2",
+      "text": "At pickup, uncle's old reports are missing. What do you do?",
+      "options": ["Go anyway", "Call the child before leaving", "Cancel the visit", "Make him search for an hour"],
+      "answer": 1,
+      "explanation": "A document is missing? Call the child before leaving."
+    },
+    {
+      "id": "t2-q3",
+      "text": "The OPD is running 90 minutes late. What do you do first?",
+      "options": ["Ask the receptionist to push you ahead", "Update the child on WhatsApp and keep the elder comfortable", "Suggest coming back another day", "Nothing, just wait"],
+      "answer": 1,
+      "explanation": "Delay over 1 hour → update the child."
+    },
+    {
+      "id": "t2-q4",
+      "text": "Inside the cabin, who should speak first?",
+      "options": ["You, to save time", "The elder", "The child on video call", "The nurse"],
+      "answer": 1,
+      "explanation": "Let the elder speak first. It's their health and dignity. Then ask the child's questions."
+    },
+    {
+      "id": "t2-q5",
+      "text": "What is ‘repeat-back’?",
+      "options": ["Repeating the elder's complaints", "Confirming every instruction with the doctor before leaving", "Asking the doctor to write it twice", "Repeating the bill amount"],
+      "answer": 1,
+      "explanation": "“Doctor sahab, confirm kar loon: yeh dawai subah-shaam, khaane ke baad, 10 din tak?”"
+    },
+    {
+      "id": "t2-q6",
+      "text": "Uncle asks you not to tell the doctor he skips his BP tablets. What is your FIRST step?",
+      "options": ["Agree, it's his choice", "Tell the doctor privately when uncle steps out", "Before the cabin, gently ask him to tell the doctor himself, with you there", "Call the child immediately"],
+      "answer": 2,
+      "explanation": "Give him the chance first. If he refuses, tell the doctor gently in front of him."
+    },
+    {
+      "id": "t2-q7",
+      "text": "Uncle refuses to tell the doctor about skipped doses. What do you do?",
+      "options": ["Keep quiet", "Tell the doctor gently in front of him, framed as a difficulty", "Tell the doctor secretly", "Tell the doctor he's careless"],
+      "answer": 1,
+      "explanation": "Never behind his back, never lie to the doctor. Frame it as a difficulty, not a fault."
+    },
+    {
+      "id": "t2-q8",
+      "text": "After the disclosure situation, what goes in the report to the child?",
+      "options": ["Nothing, to protect uncle", "A plain fact that doses are being missed, with no blame", "A complaint about uncle", "Only the medicine list"],
+      "answer": 1,
+      "explanation": "Health facts always reach the child, stated plainly without blame."
+    },
+    {
+      "id": "t2-q9",
+      "text": "The pharmacist gives a different brand and says “same hi hai”. What do you do?",
+      "options": ["Accept it, the pharmacist knows best", "Refuse and go to another pharmacy", "Confirm with the doctor's desk, and tell the child", "Pick whichever is cheaper"],
+      "answer": 2,
+      "explanation": "Substitutions are the doctor's call, never the companion's."
+    },
+    {
+      "id": "t2-q10",
+      "text": "The pharmacy bill shows 3 strips but the prescription needs 2. What do you say?",
+      "options": ["Pay and move on", "“Bhaiya, ek baar bill dobara check kar lijiye, quantity match nahi ho rahi”", "Shout at the pharmacist", "Ask uncle to decide"],
+      "answer": 1,
+      "explanation": "Firm and polite. If it gets heated, call the coordinator."
+    },
+    {
+      "id": "t2-q11",
+      "text": "Who pays at the registration counter?",
+      "options": ["The companion, then claims it back", "The elder directly, or the child remotely", "The coordinator", "Whoever has cash"],
+      "answer": 1,
+      "explanation": "No cash through the companion. Photo of every receipt."
+    },
+    {
+      "id": "t2-q12",
+      "text": "Back home, what should you leave with the elder?",
+      "options": ["Your phone number for any problem", "A written medicine chart and a simple explanation", "Medicines you think will help", "Nothing"],
+      "answer": 1,
+      "explanation": "Explain in simple Hindi and write a medicine chart: name, when, how much, how many days."
+    },
+    {
+      "id": "t2-q13",
+      "text": "Within how many hours must the WhatsApp report reach the child?",
+      "options": ["24 hours", "2 hours", "Next day", "Only if something is wrong"],
+      "answer": 1,
+      "explanation": "Within 2 hours, every visit."
+    },
+    {
+      "id": "t2-q14",
+      "text": "Which question should you ALWAYS ask the doctor before leaving?",
+      "options": ["“Fees kitni hai?”", "“Kis cheez pe dhyaan rakhna hai? Kab wapas aana hai?”", "“Aap kitne saal se doctor ho?”", "“Kya main jaa sakta hoon?”"],
+      "answer": 1,
+      "explanation": "Warning signs and the follow-up date are essential for the family."
+    },
+    {
+      "id": "t2-q15",
+      "text": "You're with a Bhole Babu elder. What changes in the visit?",
+      "options": ["Nothing", "Repeat back twice, write everything down, check every bill line by line", "Let him handle the pharmacy alone", "Skip the explanation at home"],
+      "answer": 1,
+      "explanation": "Bhole Babu trusts blindly and misses details. Extra care on instructions and bills."
+    },
+    {
+      "id": "t2-q16",
+      "text": "The pharmacy argument is getting heated. What do you do?",
+      "options": ["Argue louder", "Stop and call the coordinator", "Pay and leave", "Leave the elder and go"],
+      "answer": 1,
+      "explanation": "Advocate politely, but never fight. Escalate to the coordinator."
+    }
+  ]
+}

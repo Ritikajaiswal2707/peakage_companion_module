@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Admin · PeakAge Companion Academy{% endblock %}
+{% block content %}
+<section class="admin-head">
+  <h1>Companion progress</h1>
+  <div class="stats">
+    <div class="stat"><div class="stat-num">{{ rows | length }}</div><div class="small muted">companions{% if city %} in {{ city }}{% endif %}</div></div>
+    <div class="stat"><div class="stat-num">{{ fully_done }}</div><div class="small muted">finished online modules</div></div>
+    <div class="stat"><div class="stat-num">{{ rows | selectattr('certificate') | list | length }}</div><div class="small muted">certified 🏅</div></div>
+    <div class="stat"><div class="stat-num">{{ need_help }}</div><div class="small muted">out of attempts (need a call)</div></div>
+  </div>
+  <div class="toolbar">
+    <form method="get" action="/admin" class="inline-form">
+      <select name="city" onchange="this.form.submit()">
+        <option value="">All cities</option>
+        {% for c in cities %}<option value="{{ c }}" {% if c == city %}selected{% endif %}>{{ c }}</option>{% endfor %}
+      </select>
+    </form>
+    <a class="btn btn-ghost btn-sm" href="/admin/export.csv">Download CSV</a>
+  </div>
+</section>
+
+<div class="table-wrap card">
+  <table class="grid">
+    <thead>
+      <tr>
+        <th>Companion</th>
+        <th>Passed</th>
+        {% for m in modules %}<th title="{{ m.title }}">{{ m.code }}</th>{% endfor %}
+        <th>Offline</th>
+        <th>Cert</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>
+          <a href="/admin/companions/{{ r.user.id }}"><strong>{{ r.user.name }}</strong></a>
+          <div class="small muted">{{ r.user.phone }}{% if r.user.city %} · {{ r.user.city }}{% endif %}</div>
+        </td>
+        <td>{{ r.passed }}/{{ modules | length }}</td>
+        {% for s in r.statuses %}
+        <td class="cell cell-{{ s.state }}" title="{{ s.module.title }}: {{ s.state }}{% if s.best_score is not none %}, best {{ s.best_score }}%{% endif %}, attempts {{ s.attempts_total }}">
+          {% if s.state == PASSED %}✓ {{ s.best_score }}%
+          {% elif s.state == BLOCKED %}✗ {{ s.best_score }}%
+          {% elif s.best_score is not none %}{{ s.best_score }}%
+          {% elif s.state == OPEN %}·
+          {% else %}–{% endif %}
+        </td>
+        {% endfor %}
+        <td class="cell {{ 'cell-passed' if r.offline == offline_total else '' }}">{{ r.offline }}/{{ offline_total }}</td>
+        <td class="cell">{{ '🏅' if r.certificate else '–' }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="{{ modules | length + 4 }}" class="muted">No companions registered yet. Share the sign-up link with them.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<p class="small muted">✓ passed · ✗ out of attempts · % = best score so far · · = open, not attempted · – = locked. Hover a cell for details.</p>
+
+<section class="card">
+  <h2>Modules</h2>
+  <ol class="small">
+    {% for m in modules %}<li><strong>{{ m.code }}</strong> {{ m.title }} ({{ m.questions | length }} questions in bank, {{ m.questions_per_quiz }} per quiz)</li>{% endfor %}
+  </ol>
+</section>
+{% endblock %}

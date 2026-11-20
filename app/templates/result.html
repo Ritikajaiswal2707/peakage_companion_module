@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Result · {{ module.title }}{% endblock %}
+{% block content %}
+<section class="card result {{ 'result-pass' if attempt.passed else 'result-fail' }}" {% if attempt.passed %}data-confetti{% endif %}>
+  <div class="ring ring-lg {{ 'ring-good' if attempt.passed else 'ring-bad' }}" data-ring="{{ pct }}">
+    <svg viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="ring-track" cx="60" cy="60" r="52"/>
+      <circle class="ring-fill" cx="60" cy="60" r="52"/>
+    </svg>
+    <div class="ring-label"><b data-count="{{ pct }}">{{ pct }}%</b><span>{{ attempt.score }} of {{ attempt.total }}</span></div>
+  </div>
+  {% if attempt.passed %}
+    <h1>Shabash! You passed 🎉</h1>
+    <p class="muted">{{ module.title }} is complete.</p>
+    {% if all_online_done %}
+      <div class="note">🏆 <strong>All online modules done!</strong> Next, your coordinator takes you through the offline steps toward your certificate.</div>
+      <a class="btn" href="/dashboard">See my journey →</a>
+    {% elif next_module %}
+      <a class="btn" href="/modules/{{ next_module.code }}">Next: {{ next_module.title }} →</a>
+    {% else %}
+      <a class="btn" href="/dashboard">Back to my journey</a>
+    {% endif %}
+  {% elif status.state == BLOCKED %}
+    <h1>Not passed this time</h1>
+    <p>You've used all your attempts for this module. Please call your PeakAge coordinator. They'll go through it with you and unlock another try.</p>
+    <a class="btn btn-ghost" href="/dashboard">Back to my journey</a>
+  {% else %}
+    <h1>Almost there!</h1>
+    <p>You need {{ module.pass_percent }}% to pass. Review the explanations below and the lessons, then try again. Attempts left: <strong>{{ status.attempts_left }}</strong>.</p>
+    <a class="btn" href="/modules/{{ module.code }}">Review lessons</a>
+  {% endif %}
+</section>
+
+<section class="card">
+  <h2>Your answers</h2>
+  {% for r in results %}
+  <div class="answer {{ 'answer-right' if r.correct else 'answer-wrong' }}">
+    <div class="answer-q"><span class="answer-mark">{{ '✓' if r.correct else '✗' }}</span> {{ r.q.text }}</div>
+    {% if r.chosen is not none %}<div class="small">Your answer: {{ r.q.options[r.chosen] }}</div>{% else %}<div class="small">Not answered</div>{% endif %}
+    {% if not r.correct and r.q.explanation %}<div class="small explain">💡 {{ r.q.explanation }}</div>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+<canvas id="confetti" aria-hidden="true"></canvas>
+{% endblock %}

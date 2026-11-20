@@ -1,0 +1,101 @@
+{
+  "code": "E1",
+  "order": 9,
+  "title": "Red flags and emergencies",
+  "track": "Emergency",
+  "stage": "solo",
+  "summary": "Recognise the danger signs, and know exactly who to call and in what order. No hesitation.",
+  "offline_note": "Emergency drill in the offline session. CPR and first aid are certified later by an external trainer.",
+  "pass_percent": 80,
+  "questions_per_quiz": 8,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "The escalation ladder",
+      "video_url": "",
+      "body": "In an emergency, **don't think, follow the ladder:**\n\n1. **Ambulance first:** call **112** (national emergency number) or **108** (ambulance in most states). If you're in a hospital, shout for the staff immediately.\n2. **Then the coordinator.**\n3. **Then the family (the child).**\n\nIn that order, with no hesitation. Calling the child first wastes minutes that matter.\n\n**Always carry the elder's emergency details:** conditions, current medicines, the child's number, nearest hospital. Save them on your phone before every visit."
+    },
+    {
+      "title": "Red flags you must recognise",
+      "video_url": "",
+      "body": "### Stroke: remember FAST\n- **F**ace drooping on one side\n- **A**rm weakness (can't lift one arm)\n- **S**peech slurred or confused\n- **T**ime: call the ambulance immediately\n\n### Heart attack\nChest pain, pressure or tightness, especially spreading to the arm, jaw or back; sweating; breathlessness; sudden weakness.\n\n### Low sugar (in diabetic elders)\nSweating, shaking, confusion, dizziness, unusual behaviour. Common during long OPD waits when they haven't eaten.\n\n### Others\n- **Breathlessness** at rest\n- **A fall,** especially with a head injury, or they can't get up, or pain in the hip\n- **Sudden confusion,** not recognising you, or fainting"
+    },
+    {
+      "title": "What to do, and what never to do",
+      "video_url": "",
+      "body": "| Situation | Do | Never |\n| --- | --- | --- |\n| Any red flag | Follow the ladder: ambulance → coordinator → family | Wait to “see if it gets better” |\n| Bad fall | Keep them still and comfortable, call for help | Lift or move them after a bad fall |\n| Low sugar signs, elder awake and able to swallow | Give something sweet (juice, glucose, sugar in water) and call for help | Give anything by mouth if they're drowsy or unconscious |\n| Chest pain | Make them sit and rest, call the ambulance | Let them walk around or keep queuing |\n| Any situation | Stay with the elder, stay calm, talk to them | Give any medicine on your own |\n\nAfter the emergency, write everything down (times, what happened, who you called) for the coordinator and the family."
+    }
+  ],
+  "questions": [
+    {
+      "id": "e1-q1",
+      "text": "Uncle suddenly has chest pain in the OPD queue. Who do you call FIRST?",
+      "options": ["The child", "The coordinator", "Hospital staff / ambulance (112 or 108)", "His neighbour"],
+      "answer": 2,
+      "explanation": "Ambulance or medical help first, then the coordinator, then the family."
+    },
+    {
+      "id": "e1-q2",
+      "text": "What does FAST stand for?",
+      "options": ["Fever, Ache, Sweating, Tiredness", "Face drooping, Arm weakness, Speech difficulty, Time to call", "Fall, Accident, Shock, Trauma", "Food, Activity, Sleep, Tablets"],
+      "answer": 1,
+      "explanation": "FAST is the quick check for stroke."
+    },
+    {
+      "id": "e1-q3",
+      "text": "Aunty falls in the bathroom, hits her head and has hip pain. What do you do?",
+      "options": ["Lift her to the bed quickly", "Keep her still, call for help", "Give her a painkiller", "Ask her to try walking"],
+      "answer": 1,
+      "explanation": "Never move someone after a bad fall. Keep them still and call for help."
+    },
+    {
+      "id": "e1-q4",
+      "text": "A diabetic uncle is sweating, shaking and confused after a long OPD wait. He is awake and can swallow. What do you do?",
+      "options": ["Give him his diabetes tablet", "Give something sweet like juice and call for help", "Make him walk around", "Wait and watch"],
+      "answer": 1,
+      "explanation": "These are low-sugar signs. If awake and able to swallow, give something sweet and get help."
+    },
+    {
+      "id": "e1-q5",
+      "text": "The same uncle becomes drowsy and won't respond properly. Should you give him juice?",
+      "options": ["Yes, quickly", "No, never give anything by mouth if drowsy or unconscious; get emergency help", "Yes, a small amount", "Give water instead"],
+      "answer": 1,
+      "explanation": "Nothing by mouth if drowsy or unconscious. It can choke them."
+    },
+    {
+      "id": "e1-q6",
+      "text": "What is the correct escalation order?",
+      "options": ["Family → coordinator → ambulance", "Coordinator → family → ambulance", "Ambulance → coordinator → family", "Family only"],
+      "answer": 2,
+      "explanation": "Ambulance first. Calling the family first wastes critical minutes."
+    },
+    {
+      "id": "e1-q7",
+      "text": "Uncle's face looks droopy on one side and his speech is slurred. What is this likely, and what do you do?",
+      "options": ["Tiredness; let him rest", "Possible stroke; call the ambulance immediately", "Low sugar; give sweets", "Normal ageing"],
+      "answer": 1,
+      "explanation": "Face drooping and slurred speech are stroke signs. Time matters."
+    },
+    {
+      "id": "e1-q8",
+      "text": "What emergency details should you have on your phone before every visit?",
+      "options": ["Nothing", "Elder's conditions, medicines, child's number, nearest hospital", "Only the child's number", "The elder's bank details"],
+      "answer": 1,
+      "explanation": "These details save time for the ambulance and the hospital."
+    },
+    {
+      "id": "e1-q9",
+      "text": "Uncle has chest pain but says “kuch nahi hai, line mein khade rehte hain”. What do you do?",
+      "options": ["Respect his wish, keep queuing", "Make him sit and rest, get medical help now", "Give him water and wait", "Call the child to ask"],
+      "answer": 1,
+      "explanation": "Safety is a firm line. Chest pain means rest and immediate medical help."
+    },
+    {
+      "id": "e1-q10",
+      "text": "After an emergency is handled, what should you do?",
+      "options": ["Nothing", "Write down times, what happened and who you called, for the coordinator and family", "Post about it", "Go home"],
+      "answer": 1,
+      "explanation": "A clear record helps the family, the doctor and the coordinator."
+    }
+  ]
+}

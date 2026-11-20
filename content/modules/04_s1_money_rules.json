@@ -1,0 +1,80 @@
+{
+  "code": "S1",
+  "order": 4,
+  "title": "Money rules",
+  "track": "Safety",
+  "stage": "solo",
+  "summary": "One simple rule removes all awkwardness and suspicion: the companion never handles the elder's cash.",
+  "offline_note": "",
+  "pass_percent": 80,
+  "questions_per_quiz": 5,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "Why money needs a strict rule",
+      "video_url": "",
+      "body": "Elders behave very differently around money:\n\n- **Kanjoos:** questions every rupee.\n- **Shakki:** “tumne zyada toh nahi diya?”, suspects they're being cheated.\n- **Carefree:** happily spends, can be overcharged.\n- **Guilt or pride:** wants to pay themselves so their child isn't burdened.\n\nOne rule protects you from all four: **you never take, hold or pay the elder's cash.**"
+    },
+    {
+      "title": "The rules",
+      "video_url": "",
+      "body": "1. **Never handle the elder's cash.** The elder pays directly (cash, card or UPI at the counter), or the child pays remotely.\n2. **Never pay from your own pocket,** even if they say “paise baad mein de dunga”.\n3. **Photo of every bill and receipt.** It goes into the report to the child.\n4. **No tips, cash gifts or loans.** Politely refuse: “Uncle, PeakAge ka rule hai, main nahi le sakta. Aapka pyaar hi kaafi hai.”\n5. **Never borrow money** or share your own UPI for an elder's payment.\n\n> Taking cash from an elder means **immediate removal** from the platform, no second chance."
+    },
+    {
+      "title": "Tricky situations",
+      "video_url": "",
+      "body": "| Situation | What you do |\n| --- | --- |\n| Uncle hands you ₹2,000 to pay at the pharmacy | Walk with him to the counter so he pays himself |\n| Elder can't walk to the counter | Call the child; they can pay by UPI to the hospital or pharmacy, or tell you how to proceed |\n| Aunty insists you take ₹500 for your time | Refuse politely, every time, with a smile |\n| Pharmacy has no card machine and elder has no cash | Call the child and the coordinator. Don't pay yourself. |\n| Elder suspects the bill is too high | Show the bill, compare it with the prescription together |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "s1-q1",
+      "text": "Uncle hands you his wallet and says “aap hi pay kar do”. What do you do?",
+      "options": ["Pay and return the wallet", "Walk with him to the counter so he pays himself", "Take only the needed amount", "Pay with your own UPI and take cash later"],
+      "answer": 1,
+      "explanation": "Never handle the elder's cash. Help them pay directly."
+    },
+    {
+      "id": "s1-q2",
+      "text": "Aunty insists you keep ₹500 for being so helpful. What do you do?",
+      "options": ["Accept, it's a gift", "Accept and tell the coordinator", "Refuse politely; it's PeakAge's rule", "Accept half"],
+      "answer": 2,
+      "explanation": "No tips or cash gifts. Refuse politely, every time."
+    },
+    {
+      "id": "s1-q3",
+      "text": "The elder has no cash and the pharmacy has no card machine. What do you do?",
+      "options": ["Pay from your pocket", "Call the child and the coordinator", "Leave without medicines", "Borrow from the pharmacist"],
+      "answer": 1,
+      "explanation": "Never pay yourself. The child or coordinator decides how to proceed."
+    },
+    {
+      "id": "s1-q4",
+      "text": "What must you do with every bill and receipt?",
+      "options": ["Throw it away", "Keep it with you", "Take a photo for the report to the child", "Give it to the pharmacist"],
+      "answer": 2,
+      "explanation": "A photo of every bill goes into the report. It removes suspicion."
+    },
+    {
+      "id": "s1-q5",
+      "text": "What is the consequence of taking cash from an elder?",
+      "options": ["A warning", "Retraining", "Immediate removal from the platform", "A fine"],
+      "answer": 2,
+      "explanation": "Taking cash is zero-tolerance: immediate removal."
+    },
+    {
+      "id": "s1-q6",
+      "text": "Uncle says, “Abhi aap de do, paise baad mein de dunga.” What do you say?",
+      "options": ["“Theek hai uncle”", "Politely refuse and help him pay directly or call the child", "Pay half", "Ask the pharmacist to give credit"],
+      "answer": 1,
+      "explanation": "Never pay from your own pocket, even if they promise to pay later."
+    },
+    {
+      "id": "s1-q7",
+      "text": "A suspicious uncle thinks the bill is too high. What's the best way to handle it?",
+      "options": ["Tell him he's wrong", "Show the bill and compare it with the prescription together", "Ignore it", "Pay the difference yourself"],
+      "answer": 1,
+      "explanation": "Transparency removes suspicion. Check it together."
+    }
+  ]
+}

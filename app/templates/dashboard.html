@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% set offline_count = offline | length %}
+{% block hero %}
+<section class="hero-band">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Namaste 🙏</p>
+      <h1>{{ user.name }}</h1>
+      {% if certificate %}
+        <p class="lead">You're a PeakAge Certified Companion. Proud of you!</p>
+        <a class="btn" href="/certificate">View my certificate 🏅</a>
+      {% elif current %}
+        <p class="lead">{% if passed == 0 %}Let's begin your journey.{% else %}Great going, keep it up!{% endif %} Next up:</p>
+        <a class="btn" href="/modules/{{ current.module.code }}">
+          {{ 'Continue' if current.lessons_viewed else 'Start' }}: {{ current.module.title }} →
+        </a>
+      {% elif passed == total %}
+        <p class="lead">All online modules done ✓ Your coordinator will now take you through the offline steps.</p>
+      {% endif %}
+    </div>
+    <div class="ring" data-ring="{{ (100 * passed / total) | round | int if total else 0 }}">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="ring-track" cx="60" cy="60" r="52"/>
+        <circle class="ring-fill" cx="60" cy="60" r="52"/>
+      </svg>
+      <div class="ring-label"><b>{{ passed }}/{{ total }}</b><span>modules</span></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<h2 class="section-title">Your journey to the 🏅 badge</h2>
+
+<ol class="journey">
+  <li class="journey-stage"><span>Stage 1 · Online modules</span></li>
+  {% for s in statuses %}
+  <li class="journey-node node-{{ s.state }}">
+    <div class="node-dot">
+      {% if s.state == PASSED %}✓{% elif s.state == LOCKED %}🔒{% else %}{{ loop.index }}{% endif %}
+    </div>
+    <div class="node-card">
+      <div class="node-head">
+        <span class="chip chip-{{ s.module.track | lower }}">{{ track_icon(s.module.track) }} {{ s.module.track }}</span>
+        {% if s.state == PASSED %}<span class="badge badge-pass">Passed · {{ s.best_score }}%</span>
+        {% elif s.state == BLOCKED %}<span class="badge badge-blocked">Call your coordinator</span>
+        {% elif s.state == OPEN and s.best_score is not none %}<span class="badge badge-open">Best {{ s.best_score }}% · {{ s.attempts_left }} try left</span>{% endif %}
+      </div>
+      <div class="node-title">{{ s.module.title }}</div>
+      <div class="node-meta">{{ s.module.lessons | length }} lessons · {{ s.module.questions_per_quiz }}-question quiz</div>
+      {% if s.state != LOCKED %}
+      <div class="mini-progress"><div style="width: {{ (100 * s.lessons_viewed / (s.module.lessons | length)) | round | int }}%"></div></div>
+      <div class="node-actions">
+        {% if s.state == OPEN %}
+          <a class="btn btn-sm" href="/modules/{{ s.module.code }}">{{ 'Continue' if s.lessons_viewed else 'Start' }} →</a>
+        {% else %}
+          <a class="btn btn-ghost btn-sm" href="/modules/{{ s.module.code }}">Review</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+
+  <li class="journey-stage"><span>Stage 2 · Offline with your coordinator</span></li>
+  {% for step in offline_steps %}
+  {% set done = step.code in offline %}
+  <li class="journey-node {{ 'node-passed' if done else 'node-offline' }}">
+    <div class="node-dot">{% if done %}✓{% else %}🤝{% endif %}</div>
+    <div class="node-card">
+      <div class="node-head">
+        <span class="chip chip-offline">Offline</span>
+        {% if done %}<span class="badge badge-pass">Done · {{ offline[step.code].done_at.strftime('%d %b') }}</span>{% endif %}
+      </div>
+      <div class="node-title">{{ step.title }}</div>
+      <div class="node-meta">{{ step.description }}</div>
+    </div>
+  </li>
+  {% endfor %}
+
+  <li class="journey-node node-final {{ 'node-passed' if certificate else '' }}">
+    <div class="node-dot">🏅</div>
+    <div class="node-card cert-teaser">
+      <div class="node-title">PeakAge Certified Companion</div>
+      {% if certificate %}
+        <div class="node-meta">Certificate {{ certificate.code }} · issued {{ certificate.issued_at.strftime('%d %b %Y') }}</div>
+        <a class="btn btn-sm" href="/certificate">View certificate</a>
+      {% else %}
+        <div class="node-meta">Unlocks when all {{ total }} modules and {{ offline_steps | length }} offline steps are done. You've completed {{ passed + offline_count }} of {{ total + offline_steps | length }}.</div>
+      {% endif %}
+    </div>
+  </li>
+</ol>
+{% endblock %}

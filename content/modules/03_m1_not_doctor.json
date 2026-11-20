@@ -1,0 +1,80 @@
+{
+  "code": "M1",
+  "order": 3,
+  "title": "Companion, not doctor",
+  "track": "Medical",
+  "stage": "solo",
+  "summary": "Where the companion's job ends and the doctor's begins. Read and report, never advise.",
+  "offline_note": "",
+  "pass_percent": 80,
+  "questions_per_quiz": 5,
+  "max_attempts": 2,
+  "lessons": [
+    {
+      "title": "The golden rule",
+      "video_url": "",
+      "body": "> **“Main companion hoon, doctor nahi.”** (I'm a companion, not a doctor.)\n\nElders will ask you medical questions: “Beta, yeh goli band kar doon?” “Kya lagta hai, sugar kyon badh gaya?” Even if you study nursing or know the answer, **you never advise.** A wrong word from you can harm their health, and it breaks the family's trust.\n\n**What you say instead:** “Uncle, yeh doctor sahab se poochna sahi rahega. Main aapke liye note kar leta hoon, agli baar pooch lenge.” Then write it down for the next visit or tell the child."
+    },
+    {
+      "title": "What you can and can't do",
+      "video_url": "",
+      "body": "| You CAN | You can NEVER |\n| --- | --- |\n| Read a prescription and explain what the doctor wrote | Suggest, change, stop or add a medicine |\n| Remind them of the timing the doctor gave | Give your own opinion on a diagnosis |\n| Write a medicine chart from the prescription | Give any medicine on your own, even a common one |\n| Note symptoms and tell the doctor or child | Interpret a report (“sab normal hai”) |\n| Read a BP or sugar machine and report the number | Say whether the number is good or bad |\n\nIf you're unsure, the answer is always: note it and ask the doctor, or tell the child."
+    },
+    {
+      "title": "Noticing without diagnosing",
+      "video_url": "",
+      "body": "You see the elder often. You may notice changes the family can't: more forgetfulness, low mood, weight loss, unsteady walking.\n\n- **Do:** note it plainly in the report. “Aaj aunty ne ek hi baat 4 baar poochi, pichhle visit se zyada.”\n- **Don't:** label it. Never say “lagta hai dementia hai” or “depression hai” to the elder or the family.\n\nYour job is to observe and report. Diagnosis is the doctor's job."
+    }
+  ],
+  "questions": [
+    {
+      "id": "m1-q1",
+      "text": "Uncle asks: “Beta, BP ki goli aaj skip kar doon? Chakkar aa raha hai.” What do you do?",
+      "options": ["Say yes, skip it today", "Say no, never skip", "Don't advise; tell him to check with the doctor and inform the child", "Give him a different tablet"],
+      "answer": 2,
+      "explanation": "Never advise on medicine. Note the symptom, involve the doctor and tell the child."
+    },
+    {
+      "id": "m1-q2",
+      "text": "You read uncle's blood test report and it looks normal to you. What do you say?",
+      "options": ["“Sab normal hai, uncle”", "Nothing about the meaning; the doctor will explain it", "“Thoda high hai”", "Google it and tell him"],
+      "answer": 1,
+      "explanation": "Never interpret reports. That's the doctor's job."
+    },
+    {
+      "id": "m1-q3",
+      "text": "Aunty has a headache and asks you for a paracetamol from her own medicine box. What's right?",
+      "options": ["Give it, it's common", "Don't give it yourself; ask the child or doctor what to do", "Give half a tablet", "Buy a new one"],
+      "answer": 1,
+      "explanation": "Never give any medicine on your own, even a common one."
+    },
+    {
+      "id": "m1-q4",
+      "text": "Over three visits, aunty seems more forgetful. What do you do?",
+      "options": ["Tell her she may have dementia", "Note the change plainly in the report", "Ignore it", "Tell her neighbours"],
+      "answer": 1,
+      "explanation": "Observe and report plainly. Never label or diagnose."
+    },
+    {
+      "id": "m1-q5",
+      "text": "Which of these CAN a companion do?",
+      "options": ["Change the medicine timing", "Explain what the doctor wrote on the prescription", "Stop a medicine that causes side effects", "Tell the family the diagnosis is not serious"],
+      "answer": 1,
+      "explanation": "Read and explain only. Never change anything."
+    },
+    {
+      "id": "m1-q6",
+      "text": "The BP machine shows 160/100. What do you do?",
+      "options": ["Say it's very dangerous", "Say it's fine", "Report the exact number to the child or doctor without interpreting it", "Give a BP tablet"],
+      "answer": 2,
+      "explanation": "Read and report numbers. Never say whether they're good or bad."
+    },
+    {
+      "id": "m1-q7",
+      "text": "You're a nursing student and know a lot about medicines. Does the golden rule apply to you?",
+      "options": ["No, you can advise", "Only for serious medicines", "Yes, always: companion, not doctor", "Only if the family objects"],
+      "answer": 2,
+      "explanation": "On a PeakAge visit, you are a companion. The rule applies to everyone."
+    }
+  ]
+}

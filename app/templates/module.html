@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}{{ status.module.title }} · PeakAge Companion Academy{% endblock %}
+{% block hero %}
+{% set m = status.module %}
+<section class="hero-band hero-slim">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <a class="back back-light" href="/dashboard">← My journey</a>
+      <span class="chip chip-{{ m.track | lower }}">{{ track_icon(m.track) }} {{ m.track }}</span>
+      <h1>{{ m.title }}</h1>
+      <p class="lead">{{ m.summary }}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block content %}
+{% set m = status.module %}
+{% if m.offline_note %}<div class="note">🤝 <strong>Also practised offline:</strong> {{ m.offline_note }}</div>{% endif %}
+
+<section class="card">
+  <div class="card-head">
+    <h2>Lessons</h2>
+    <span class="muted small">{{ status.lessons_viewed }}/{{ m.lessons | length }} done</span>
+  </div>
+  <div class="mini-progress"><div style="width: {{ (100 * status.lessons_viewed / (m.lessons | length)) | round | int }}%"></div></div>
+  <ol class="steps">
+    {% for lesson in m.lessons %}
+    {% set seen = loop.index0 in viewed %}
+    <li class="step {{ 'step-done' if seen else '' }}">
+      <a href="/modules/{{ m.code }}/lessons/{{ loop.index0 }}">
+        <span class="step-dot">{{ '✓' if seen else loop.index }}</span>
+        <span class="step-title">{{ lesson.title }}</span>
+        {% if lesson.video_url %}<span class="step-tag">▶ video</span>{% endif %}
+        <span class="step-go">→</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="card quiz-card">
+  <div class="card-head">
+    <h2>📝 Quiz</h2>
+    <span class="muted small">{{ m.questions_per_quiz }} questions · pass {{ m.pass_percent }}% · {{ m.max_attempts }} attempts</span>
+  </div>
+  {% if status.state == PASSED %}
+    <div class="quiz-state pass">🎉 Passed with <b>{{ status.best_score }}%</b></div>
+  {% elif status.state == BLOCKED %}
+    <div class="flash flash-error">You've used all {{ m.max_attempts }} attempts. Please call your PeakAge coordinator. They'll go through it with you and unlock another try.</div>
+  {% elif not status.lessons_done %}
+    <div class="quiz-state locked">🔒 Finish all {{ m.lessons | length }} lessons to unlock the quiz.</div>
+  {% else %}
+    <p>Ready? You get instant feedback after each answer. Attempts left: <strong>{{ status.attempts_left }}</strong>{% if status.best_score is not none %} · Best so far: {{ status.best_score }}%{% endif %}</p>
+    <a class="btn" href="/modules/{{ m.code }}/quiz">Start quiz →</a>
+  {% endif %}
+</section>
+{% endblock %}

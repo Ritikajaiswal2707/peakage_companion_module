@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Log in · PeakAge Companion Academy{% endblock %}
+{% block body_class %}auth{% endblock %}
+{% block hero %}
+<section class="auth-hero">
+  <div class="auth-hero-inner">
+    <p class="eyebrow">PeakAge Companion Academy</p>
+    <h1>Become the companion families trust with their parents.</h1>
+    <p class="lead">Learn the PeakAge way, one module at a time. Your progress is saved to your account.</p>
+  </div>
+</section>
+{% endblock %}
+{% block content %}
+<section class="card auth-card">
+  <h2>Log in</h2>
+  <p class="muted">Use the mobile number you registered with.</p>
+  <form method="post" action="/login" class="form">
+    <label>Mobile number
+      <input name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="98xxxxxxxx" required>
+    </label>
+    <label>Password
+      <input name="password" type="password" autocomplete="current-password" required>
+    </label>
+    <button class="btn btn-block" type="submit">Log in</button>
+  </form>
+  <p class="muted small center">New companion? <a href="/register">Create your account</a></p>
+  <p class="muted small center">Forgot your password? Call your PeakAge coordinator to reset it.</p>
+</section>
+{% endblock %}
